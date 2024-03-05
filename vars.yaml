@@ -1,0 +1,7 @@
+---
+domain_name: "{{ lookup('env', 'DOMAIN_NAME') }}"
+email: "{{ lookup('env', 'EMAIL') }}"
+postgres_user: "{{ lookup('env', 'POSTGRES_USER') }}"
+postgres_password: "{{ lookup('env', 'POSTGRES_PASSWORD') }}"
+postgres_databasename: "{{ lookup('env', 'POSTGRES_DATABASENAME') }}"
+jwt: "{{ lookup('env', 'JWT') }}"
