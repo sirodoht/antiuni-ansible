@@ -1,0 +1,16 @@
+[Unit]
+Description=hoffnung3000
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+Group=www-data
+ExecStart=/usr/bin/npm start
+ExecReload=/bin/kill -HUP $MAINPID
+WorkingDirectory=/var/www/hoffnung3000
+TimeoutSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

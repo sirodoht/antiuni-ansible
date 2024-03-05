@@ -1,0 +1,14 @@
+{{ domain_name }} {
+    route {
+        file_server /static/* {
+            root /var/www/hoffnung3000
+        }
+        reverse_proxy 127.0.0.1:3000
+    }
+
+    tls {{ email }} {
+        on_demand
+    }
+
+    encode zstd gzip
+}
