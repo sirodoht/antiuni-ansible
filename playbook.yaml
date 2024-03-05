@@ -128,6 +128,13 @@
       community.general.npm:
         path: /var/www/hoffnung3000
       become_user: deploy
+    - name: build
+      ansible.builtin.shell:
+        cmd: npm run build
+        chdir: /var/www/hoffnung3000
+      args:
+        executable: /bin/bash
+      become_user: deploy
     - name: clear working dir
       # we discard changes because npm install changes package-lock.json
       ansible.builtin.shell:
