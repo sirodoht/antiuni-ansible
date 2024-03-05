@@ -1,0 +1,17 @@
+# inventory.yaml
+
+# Server IP and user with ssh access
+export ANSIBLE_HOST=
+export ANSIBLE_USER=
+
+
+# vars.yaml
+
+# Configure domain name
+export DOMAIN_NAME=
+
+# Email for SSL notifications
+export EMAIL=
+
+# Database password
+export POSTGRES_PASSWORD=
