@@ -10,8 +10,19 @@ export ANSIBLE_USER=
 # Configure domain name
 export DOMAIN_NAME=
 
-# Email for SSL notifications
+# Email for Caddy Let's Encrypt notifications
 export EMAIL=
 
-# Database password
+# Database credentials
+export POSTGRES_USER=
 export POSTGRES_PASSWORD=
+export POSTGRES_DATABASENAME=
+
+# Secret key for session
+export JWT=
+
+# SMTP credentials
+export SMTP_HOST=
+export SMTP_PASS=
+export SMTP_PORT=
+export SMTP_USER=
